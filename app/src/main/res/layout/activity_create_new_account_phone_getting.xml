@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EAECEE"
+    tools:context=".CreateNewAccountPhoneGetting">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you"
+        android:textColor="#50c878"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/phonetxt1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="looking"
+        android:textColor="#50c878"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/phonetxt1"
+        android:id="@+id/phonetxt2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="for"
+        android:textColor="#50c878"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonetxt2"
+        android:id="@+id/phonetxt3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bus?"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/phonetxt3"
+        app:layout_constraintTop_toBottomOf="@id/phonetxt2"
+        android:id="@+id/phonetxt4"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join us to get your\n favourite bus..."
+        app:layout_constraintTop_toBottomOf="@id/phonetxt4"
+        android:id="@+id/phonetxt5"/>
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/mobileicon"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/phonebtn"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:id="@+id/mobileicon"/>-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableLeft="@drawable/mobileicon"
+        android:hint="MOBILE NUMBER"
+        android:background="@drawable/square_edt_focused"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/phonebtn"
+        android:id="@+id/nmbredt"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE"
+        android:background="#50c878"
+        android:textColor="#EAECEE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/phonebtn"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
